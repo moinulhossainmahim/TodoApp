@@ -16,7 +16,7 @@
 
 	addTaskButton.addEventListener('click', function() {
 
-		var itemsHtml = '<h1>Add new task</h1>';
+		var itemsHtml = '<h1>Task list</h1>';
 
 
 		taskNameValue 		 = '';
