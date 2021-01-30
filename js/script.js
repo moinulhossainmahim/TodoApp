@@ -31,11 +31,6 @@
 		tasksList.push({title:titleValue, description:descriptionValue, priority:priorityValue});
 		console.log(tasksList);
 		tasksList.forEach(function(objectInArray, index){
-			/*taskNameValue  			+= `<p id="task-name"><strong>Task:</strong> ${index+1}</p>`;
-			taskTitleValue 			+= `<p id="task-title"><strong>Title:</strong> ${objectInArray.title}</p>`;
-			taskDescriptionValue	+= `<p id="task-description"><strong>Description:</strong>${objectInArray.description}</p>`;
-			taskPriorityValue		+= `<p id="task-priority"><strong>Priority: </strong> High ${objectInArray.priority}</p>`;*/
-
 			itemsHtml += `<div id="item-div">
 					<p id="task-name"><strong>Task:</strong> ${index+1}</p>
 					<p id="task-title"><strong>Title:</strong> ${objectInArray.title}</p>
