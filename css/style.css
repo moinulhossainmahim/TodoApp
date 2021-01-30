@@ -1,0 +1,60 @@
+html {
+    background-color: #f1f1f1;
+}
+
+#item-div:first-child {
+    margin-top: 0; 
+}
+
+.task-show-container {
+    padding: 20px;
+    width: 70%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#task-title,
+#dropdown-box {
+	height: 30px;
+    width: 100%;
+}
+
+#add-btn {
+    padding: 9px;
+    margin-top: 20px;
+    background-color: #4500ff;
+    color: white;
+    border: 1px solid #4500ff;
+    width: 100%;
+    cursor: pointer;
+}
+
+#item-div {
+    font-size: 18px;
+    width: 49%;
+    padding: 30px;
+    background-color: white;
+    letter-spacing: 1px;
+    border: 1px solid #4500ff;
+    margin-top: 20px;
+}
+
+#description-box {
+    height: 70px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #4500ff;    
+}
+
+#item-div p {
+    margin: 0;
+    margin-top: 5px;    
+}
+
+#priority-dropdown {
+    border: 1px solid #4500ff;
+}
+
+input {
+    border: 1px solid #4500ff;
+}

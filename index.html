@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Daily Works</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<style>
+			.wrapper {
+				display: flex;
+    			margin-top: 35px;
+			}
+			.task-add-container {
+				width: 30%;
+    			padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="wrapper">
+			<div class="task-add-container">
+				<div>
+					<h1>Task list</h1>
+				</div>
+				<div>
+					<input type="text" id="task-title" placeholder="Enter task title" />
+				</div>
+				<div>
+					<textarea placeholder="Task description" id="description-box"></textarea>
+				</div>
+				<div id="priority-dropdown">
+					<select id="dropdown-box">
+						<option value="">Choose task priority</option>
+						<option value="1">High</option>
+						<option value="2">Medium</option>
+						<option value="3">Low</option>
+					</select>
+				</div>
+				<button id="add-btn">Add task</button>
+			</div>
+			<div class="task-show-container">
+				<div>
+					<h1>Add new task</h1>
+				</div>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
