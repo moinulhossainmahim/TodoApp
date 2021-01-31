@@ -4,6 +4,15 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+.wrapper {
+    display: flex;
+    margin-top: 35px;
+    }
+.task-add-container {
+    width: 30%;
+    padding: 20px;
+    }
+
 #item-div:first-child {
     margin-top: 0; 
 }
