@@ -11,7 +11,6 @@
 	var tasksList 			 	 = [];
 
 	addTaskButton.addEventListener('click', function() {
-
 		var itemsHtml = '<h1>Task List</h1>';
 
 		var titleValue 	= taskTitle.value;
@@ -21,30 +20,25 @@
 		if (titleValue ==='') {
 			titleAlertMessage.style.display = 'block';
 		} else {
-			titleValue;
 			titleAlertMessage.style.display = 'none';
 		}
 		if (descriptionValue ==='') {
 			descriptionAlertMessage.style.display = 'block';
 		} else {
-			descriptionValue;
 			descriptionAlertMessage.style.display = 'none';
 		}
 		if (priorityValue ==='') {
 			priorityAlertMessage.style.display = 'block';
 		} else {
-			priorityValue;
 			priorityAlertMessage.style.display = 'none';
 		}
 
 		if((titleValue ==='') || (descriptionValue ==='') || (priorityValue ==='')) {
-			taskShowContainer.style.display = 'none';
-
-		} else {
-			taskShowContainer.style.display = 'block';
+			return false;
 		}
 
 		tasksList.push({title:titleValue, description:descriptionValue, priority:priorityValue});
+		console.log(tasksList);
 		tasksList.forEach(function(objectInArray, index){
 			var badgeElements ='';
 			if(objectInArray.priority == 1) {
@@ -63,6 +57,14 @@
 				</div>`;
 		});
 		taskShowContainer.innerHTML = itemsHtml;
+		clearInputs();
+		
 	});
-			
+
+	function clearInputs() {
+		taskTitle.value = '';
+		taskDescription.value = '';
+		taskPriority.value = '';
+	}
+
 })();
