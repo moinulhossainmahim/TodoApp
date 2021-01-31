@@ -25,19 +25,22 @@
 					<h1>Add new task</h1>
 				</div>
 				<div>
-					<input type="text" id="task-title" placeholder="Enter task title" />
+					<input type="text" id="task-title" placeholder="Enter task title">
+					<small id="title-alert-msg">Task title can't be blank</small>
 				</div>
-				<div>
+				<div class="description">
 					<textarea placeholder="Task description" id="description-box"></textarea>
+					<small id="description-alert-msg">Description can't be blank</small>
 				</div>
 				<div id="priority-dropdown">
 					<select id="dropdown-box">
 						<option value="">Choose task priority</option>
-						<option value="1">High</option>
-						<option value="2">Medium</option>
-						<option value="3">Low</option>
+						<option id="option-high" value="1">High</option>
+						<option id="option-medium" value="2">Medium</option>
+						<option id="option-low" value="3">Low</option>
 					</select>
 				</div>
+				<small id="priority-alert-msg">priority can't be blank</small>
 				<button id="add-btn">Add task</button>
 			</div>
 			<div class="task-show-container">

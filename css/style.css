@@ -42,9 +42,9 @@ html {
 }
 
 #description-box {
+    margin-top: 10px;
     height: 70px;
     width: 100%;
-    margin: 10px 0;
     border: 1px solid #4500ff;    
 }
 
@@ -55,8 +55,47 @@ html {
 
 #priority-dropdown {
     border: 1px solid #4500ff;
+    margin-top: 10px;
 }
 
 input {
     border: 1px solid #4500ff;
+}
+
+#priority-alert-msg,
+#description-alert-msg,
+#title-alert-msg {
+    display: none;
+    color: red;
+    font-weight: 600;
+}
+
+.badge-high {
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    font-size: 14px;
+    padding: 3px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.badge-medium {
+    color: #212529;
+    background-color: #ffc107;
+    border: 1px solid yellow;
+    font-size: 14px;
+    padding: 3px;
+    line-height: 2;
+    font-weight: 600;
+}
+
+.badge-low {
+    color: #fff;
+    background-color: #dc3545;
+    border: 1px solid red;
+    font-size: 14px;
+    padding: 3px;
+    line-height: 2;
+    font-weight: 600;
 }
